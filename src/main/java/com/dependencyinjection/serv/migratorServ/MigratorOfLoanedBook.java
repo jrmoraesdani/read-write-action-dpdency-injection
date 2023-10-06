@@ -3,7 +3,9 @@ import com.dependencyinjection.model.Book;
 import com.dependencyinjection.model.User;
 import com.dependencyinjection.rep.ReaderBook;
 import com.dependencyinjection.rep.WriteBookInBd;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MigratorOfLoanedBook {
     ReaderBook<Book> reader;
     WriteBookInBd<Book> write;
